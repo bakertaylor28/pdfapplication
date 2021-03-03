@@ -1,0 +1,38 @@
+User-Agent: *
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /pdf/
+Disallow: /scripts/
+Disallow: /inc/
+Disallow: /tmp/
+
+User-Agent: Googlebot
+Disallow: /
+
+User-Agent: Googlebot-Mobile
+Disallow: /
+
+User-Agent: Googlebot-Image
+Disallow: /
+
+User-Agent: Mediapartners-Google
+Disallow: /
+
+User-Agent: Adsbot-Google
+Disallow: /
+
+User-Agent: Slurp
+Disallow: /
+
+User-Agent: msnbot
+Disallow: /
+
+User-Agent: msnbot-media
+Disallow: /
+
+User-Agent: Teoma
+Disallow: /
+
+User Agent: archive.org_bot
+Disallow: / 

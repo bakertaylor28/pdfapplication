@@ -1,0 +1,141 @@
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `accounts`
+--
+
+CREATE TABLE `accounts` (
+  `id` int(4) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `priv` varchar(1) NOT NULL,
+  `comments` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `accounts`
+--
+
+INSERT INTO `accounts` (`id`, `username`, `password`, `priv`, `comments`) VALUES
+(1, 'administrator', 'password', '2', 'application administrator account'),
+(2, 'test', 'password', '1', 'This is a test account for demo purposes, etc.'),
+(3, 'banned', 'password', '0', 'This is a pre-configured banned account for testing the ban feature.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `app`
+--
+
+CREATE TABLE `app` (
+  `id` int(4) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `date` varchar(11) NOT NULL,
+  `url` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `app`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `count`
+--
+
+CREATE TABLE `count` (
+  `id` int(4) NOT NULL,
+  `cnt` varchar(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `count`
+--
+
+INSERT INTO `count` (`id`, `cnt`) VALUES
+(1, '0'),
+(2, '0'),
+(3, '0');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `globalsettings`
+--
+
+CREATE TABLE `globalsettings` (
+  `id` int(4) NOT NULL,
+  `loginenabled` varchar(1) NOT NULL,
+  `signupenabled` varchar(1) NOT NULL,
+  `sitesuspend` varchar(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `globalsettings`
+--
+
+INSERT INTO `globalsettings` (`id`, `loginenabled`, `signupenabled`, `sitesuspend`) VALUES
+(1, '1', '1', '0'),
+(2, '1', '1', '0');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `accounts`
+--
+ALTER TABLE `accounts`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `app`
+--
+ALTER TABLE `app`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `url` (`url`);
+
+--
+-- Indexes for table `count`
+--
+ALTER TABLE `count`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `globalsettings`
+--
+ALTER TABLE `globalsettings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `accounts`
+--
+ALTER TABLE `accounts`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `app`
+--
+ALTER TABLE `app`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `count`
+--
+ALTER TABLE `count`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `globalsettings`
+--
+ALTER TABLE `globalsettings`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
