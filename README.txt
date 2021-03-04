@@ -8,8 +8,9 @@ is:
 username is either test or administrator, 
 and password is password.
 
-Installation of this package should be straight forward for those whom are experienced in dealing with a LAMP server, so 
-detail will not be given. 
+Installation of this package should be straight forward for those whom are experienced in dealing with a LAMP server,
+so detail will not be given here. Refer to fpdf's documentation to learn how to use fpdf. This package requires a
+fair bit of understanding php in order to use it effectively. It is not for the novice.
 
 The scripts folder contains connect.php in which the SQL database connection informaton should be set.
 SQL.txt contains the names and structure of the SQL tables necessary to run the applicaton. 
