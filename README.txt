@@ -20,6 +20,10 @@ The main files that you will want to change for your purposes with respect to co
 The scripts folder contains connect.php in which the SQL database connection informaton should be set.
 SQL.txt contains the names and structure of the SQL tables necessary to run the applicaton. 
 
+The inc folder contains ipsum.txt, which is used to place the contract to be signed in an iframe in sign.php. 
+Sign.php passes the user's signature as a post variable to the php script /pdfexample.php which builds the PDF file
+using the FPDF library.
+
 Questions about, and bugs related to, fpdf should be directed to http://fpdf.org.
 Bugs pertaining directly to fpdf and "how do I" questions pertaining directly to fpdf 
 will be automatically closed without comment if sumbmitted here. 
