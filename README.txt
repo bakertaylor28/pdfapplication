@@ -1,4 +1,4 @@
-PDF Application is a php CMS which relies on fpdf, and whicws a server administrator to deploy the presentation of a contract, 
+PDF Application is a php CMS which relies on fpdf, and which allows a server administrator to deploy the presentation of a contract, 
 allows the user to sign the contract, outputs the contract to a PDF file, and then allows both the user and the administrator 
 access to the output pdf file.  
 
