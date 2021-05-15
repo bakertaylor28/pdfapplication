@@ -2,6 +2,8 @@ PDF Application is a php CMS which relies on fpdf, and which allows a server adm
 allows the user to sign the contract, outputs the contract to a PDF file, and then allows both the user and the administrator 
 access to the output pdf file.  
 
+Dependencies: fpdf must be installed on the server as prerequisite to being able to use pdfapplication. You can get fpdf here: https://github.com/bakertaylor28/fpdf
+
 The login information for the user site, located at https://pdfapplication.000webhostapp.com
 is:
 
